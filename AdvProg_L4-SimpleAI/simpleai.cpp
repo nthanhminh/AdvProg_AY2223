@@ -62,7 +62,7 @@ char nextCharWhenWordIsNotInDictionary(const set<char>& selectedChars)
 map<char, int> countOccurrences(const vector<string>& candidateWords)
 {
     map<char, int> answer;
-    for (int i = 0; i < (int)candidateWords.size(), i++)
+    for (int i = 0; i < (int)candidateWords.size(); i++)
     {
         for (int j = 0;j < (int)candidateWords[i].size(); j++)
         {
