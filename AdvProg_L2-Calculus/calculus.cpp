@@ -2,6 +2,7 @@
 #include <string>
 #include <cmath>
 // test     
+// check
 using std::string;
 using std::cout;
 using std::endl;
