@@ -46,6 +46,7 @@ jobs:
       - name: install package
         run: |
           sudo apt-get update
+          sudo apt-get upgrade
           sudo apt install -y libcppunit-dev
       - name: make & test
         working-directory: ./AdvProg_L0-Hello
@@ -65,6 +66,7 @@ jobs:
       - name: install package
         run: |
           sudo apt-get update
+          sudo apt-get upgrade
           sudo apt install -y libcppunit-dev
       - name: make & test
         working-directory: ./AdvProg_L1-GuessIt
@@ -84,6 +86,7 @@ jobs:
       - name: install package
         run: |
           sudo apt-get update
+          sudo apt-get upgrade
           sudo apt install -y libcppunit-dev
       - name: make & test
         working-directory: ./AdvProg_L2-Calculus
@@ -103,6 +106,7 @@ jobs:
       - name: install package
         run: |
           sudo apt-get update
+          sudo apt-get upgrade
           sudo apt install -y libcppunit-dev
       - name: make & test
         working-directory: ./AdvProg_L3-HangMan
@@ -122,6 +126,7 @@ jobs:
       - name: install package
         run: |
           sudo apt-get update
+          sudo apt-get upgrade
           sudo apt install -y libcppunit-dev
       - name: make & test
         working-directory: ./AdvProg_L4-SimpleAI
@@ -141,6 +146,7 @@ jobs:
       - name: install package
         run: |
           sudo apt-get update
+          sudo apt-get upgrade
           sudo apt install -y libcppunit-dev
           sudo apt install libsdl2-dev
           sudo apt install libsdl2-image-dev
@@ -162,6 +168,7 @@ jobs:
       - name: install package
         run: |
           sudo apt-get update
+          sudo apt-get upgrade
           sudo apt install -y libcppunit-dev
           sudo apt install libsdl2-dev
           sudo apt install libsdl2-image-dev
