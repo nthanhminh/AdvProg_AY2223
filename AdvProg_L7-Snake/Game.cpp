@@ -92,7 +92,7 @@ void Game::snakeLeave(Position position)
 	//
 	//
 	// END CODE HERE
-	setCellType(positon, CELL_EMPTY);
+	setCellType(position, CELL_EMPTY);
 }
 
 
