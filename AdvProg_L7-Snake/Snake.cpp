@@ -25,6 +25,7 @@ Snake::~Snake()
             p = nextNode;
     }
     */
+
 }
 
 // DO NOT CHANGE METHOD
@@ -56,7 +57,7 @@ void Snake::growAtFront(Position newPosition)
     /* YOUR CODE HERE */
     SnakeNode* newHead = new SnakeNode(newPosition, nullptr);
     head->next = newHead;
-    head = head->next;
+    head = newHead;
 }
 
 
