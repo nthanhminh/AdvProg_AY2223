@@ -167,7 +167,7 @@ void Game::nextStep()
 		}
     }
 
-   // snake.move(currentDirection);
+	snake.move(currentDirection);
 }
 
 
@@ -198,7 +198,7 @@ void Game::addCherry()
 
 			// YOUR CODE HERE
 			// YOUR CODE HERE
-			cherryPosition = randomPos;
+			//cherryPosition = randomPos;
 			setCellType(randomPos, CELL_CHERRY);
 
        		break;
@@ -230,7 +230,7 @@ void Game::setCellType(Position pos, CellType cellType)
 	// END CODE HERE
 	if (pos.isInsideBox(0, 0, width, height))
 	{
-		squares[pos.x][pos.y] = cellType;
+		squares[pos.y][pos.x] = cellType;
 	}
 }
 
