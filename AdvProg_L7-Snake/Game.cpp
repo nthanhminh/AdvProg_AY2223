@@ -92,6 +92,7 @@ void Game::snakeLeave(Position position)
 	//
 	//
 	// END CODE HERE
+	
 	setCellType(position, CELL_EMPTY);
 }
 
@@ -166,7 +167,7 @@ void Game::nextStep()
 		}
     }
 
-    snake.move(currentDirection);
+   // snake.move(currentDirection);
 }
 
 
