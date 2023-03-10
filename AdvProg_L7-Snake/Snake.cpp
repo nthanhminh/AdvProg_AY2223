@@ -26,6 +26,7 @@ Snake::~Snake()
     }
     */
 
+
 }
 
 // DO NOT CHANGE METHOD
@@ -88,20 +89,23 @@ void Snake::slideTo(Position newPosition)
 	if (tail->next == nullptr) { 
         // position is assigned by new position.
 		/* YOUR CODE HERE */
-        tail->position = newPosition;
+        SnakeNode* newN = new SnakeNode(newPosition);
+        tail = newN;
+        head = newN;
 	}
 	else {
 		SnakeNode *oldTailNode = tail;
 		//cut the old tail off the snake
         /* YOUR CODE HERE */
-        tail = tail->next;
-        oldTailNode->next = NULL;
-        oldTailNode->position = newPosition;
 		
 		// move it to the head of the snake
         /* YOUR CODE HERE */
-        head->next = oldTailNode;
-		head = oldTailNode;
+        SnakeNode* newN = tail->next;
+        tail = newN;
+        SnakeNode* newH = new SnakeNode(newPosition);
+        head->next = newH;
+        head = newH;
+        
 
 	}
 }

@@ -198,6 +198,7 @@ void Game::addCherry()
 
 			// YOUR CODE HERE
 			// YOUR CODE HERE
+			cherryPosition = randomPos;
 			setCellType(randomPos, CELL_CHERRY);
 
        		break;
